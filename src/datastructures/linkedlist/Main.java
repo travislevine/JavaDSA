@@ -7,18 +7,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LinkedList myLinkedList = new LinkedList(1);
+        LinkedList myLinkedList = new LinkedList(2);
 
-        myLinkedList.getHead(); // 1
-        myLinkedList.getTail(); // 1
-        myLinkedList.getLength(); // 1
 
         myLinkedList.append(3);
-
-        myLinkedList.getHead();// 3
-        myLinkedList.getTail(); // 1
-        myLinkedList.getLength(); // 2
-        System.out.println("\nLinked List:");
+        myLinkedList.printList();
+        myLinkedList.prepend(1);
         myLinkedList.printList();
 
         /*

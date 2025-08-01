@@ -1,9 +1,6 @@
 // THIS CODE GOES IN YOUR LINKEDLIST CLASS:
 // ----------------------------------------
-
 package datastructures.linkedlist;
-
-
 
 public class LinkedList {
 
@@ -43,6 +40,35 @@ public class LinkedList {
         }
         length++;
     }
+
+    public void prepend(int value) {
+        // Create the new node to prepends
+        Node newNode = new Node(value);
+
+        // Edge case for if no nodes are in the linked list
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            // Point the newnode to the next node that head points to
+            newNode.next = head;
+
+            // Reset head to point ot the new node
+            head = newNode;
+        }
+        length++;
+    }
+
+//    public Node removeLast() {
+//        Node temp = head;
+//        Node pre = head;
+//        if (length == 0) return null;
+//
+//        while (temp.next != null) {
+//            pre = temp;
+//            temp = temp.next;
+//        }
+//    }
 
     public void printList() {
         Node temp = head;

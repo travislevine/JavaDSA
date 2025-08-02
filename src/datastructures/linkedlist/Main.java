@@ -7,26 +7,28 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LinkedList myLinkedList = new LinkedList(2);
-
-
+        LinkedList myLinkedList = new LinkedList(0);
+        myLinkedList.append(1);
+        myLinkedList.append(2);
         myLinkedList.append(3);
-        myLinkedList.printList();
-        myLinkedList.prepend(1);
-        myLinkedList.printList();
+
+
+        System.out.println(myLinkedList.get(3).value);
 
         /*
             EXPECTED OUTPUT:
             ----------------
-            Head: 4
-            Tail: 4
-            Length: 1
-            
-            Linked List:
-            4
+            3
 
         */
 
+
+        /*
+            EXPECTED OUTPUT:
+            ----------------
+            3
+
+        */
     }
 
 }

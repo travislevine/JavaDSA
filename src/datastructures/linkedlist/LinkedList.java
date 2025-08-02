@@ -77,6 +77,17 @@ public class LinkedList {
             temp = temp.next;
         }
     }
+    public Node get(int index) {
+        if (index >= 0 && index <= (length - 1)) {
+        Node temp = head;
+            for (int i = 0; i < index; i++) {
+                temp = temp.next;
+            }
+            return temp;
+        } else {
+            return null;
+        }
+    }
 
     public void getHead() {
         if (head == null) {

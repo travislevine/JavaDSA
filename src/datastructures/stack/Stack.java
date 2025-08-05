@@ -30,6 +30,19 @@ public class Stack {
         height++;
     }
 
+    public Node pop() {
+        if (height == 0) {
+            return null;
+        } else {
+            Node temp = top;
+            top = top.next;
+            temp.next = null;
+            height--;
+            return temp;
+        }
+    }
+
+
     public void printStack() {
         Node temp = top;
         while (temp != null) {

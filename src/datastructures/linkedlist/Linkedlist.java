@@ -2,7 +2,7 @@
 // ----------------------------------------
 package datastructures.linkedlist;
 
-public class LinkedList {
+public class Linkedlist {
 
     // CREATE CLASS VARIABLES, NODE CLASS, AND CONSTRUCTOR HERE //
     Node head;
@@ -18,7 +18,7 @@ public class LinkedList {
         }
     }
 
-    public LinkedList(int value) {
+    public Linkedlist(int value) {
         Node newNode = new Node(value);
         head = newNode;
         tail = newNode;

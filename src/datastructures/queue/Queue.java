@@ -5,13 +5,8 @@ public class Queue {
     Node last;
     int length;
 
+    // Rewrite queue constructor practice
 
-    public Queue(int value) {
-        Node newNode = new Node(value);
-        first = newNode;
-        last = newNode;
-        length = 1;
-    }
     class Node {
         Node next;
         int value;
